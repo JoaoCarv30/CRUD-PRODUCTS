@@ -10,8 +10,8 @@ builder.Services.AddDbContext<ProductContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("ProductConnection"), ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("ProductConnection")))
 );
 
-
-
+//ADICIONANDO O AUTOMAPPER 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 
 // Add services to the container.

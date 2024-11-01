@@ -39,3 +39,5 @@ C:\code\.NET\ProductsCrud\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relatio
 C:\code\.NET\ProductsCrud\bin\Debug\net8.0\MySqlConnector.dll
 C:\code\.NET\ProductsCrud\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\code\.NET\ProductsCrud\obj\Debug\net8.0\ProductsCrud.sourcelink.json
+C:\code\.NET\ProductsCrud\bin\Debug\net8.0\AutoMapper.dll
+C:\code\.NET\ProductsCrud\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

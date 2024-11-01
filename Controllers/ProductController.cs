@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using ProductsCrud.Data;
+using ProductsCrud.Data.Dtos;
 using ProductsCrud.Models;
 
 namespace ProductsCrud.Controllers
@@ -15,17 +17,21 @@ namespace ProductsCrud.Controllers
 
 
         private ProductContext _context;  // Variável para acessar o banco de dados
-        public ProductController(ProductContext context) // Construtor que recebe o contexto do banco de dados
+        private IMapper _mapper; // Variável para mapear os objetos
+        public ProductController(ProductContext context, IMapper mapper) // Construtor que recebe o contexto do banco de dados
         {
             _context = context;
+            _mapper = mapper;
         }
 
 
         // Lista estática para manter os produtos em memória temporariamente
 
         [HttpPost]
-        public IActionResult Create(Product product)
+        public IActionResult Create([FromBody]CreateProductDto productDto)
         {
+
+            Product product = _mapper.Map<Product>(productDto); // Mapeia o objeto DTO para o objeto de modelo
             _context.Products.Add(product); // Adiciona o produto ao contexto
             _context.SaveChanges(); // Salva as alterações no banco de dados
             return Ok(product); // Retorna o produto criado

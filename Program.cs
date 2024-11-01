@@ -1,4 +1,18 @@
+using Microsoft.EntityFrameworkCore;
+using ProductsCrud.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+
+//CONEXÃO AO BANCO
+builder.Services.AddDbContext<ProductContext>(options =>
+    options.UseMySql(builder.Configuration.GetConnectionString("ProductConnection"), ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("ProductConnection")))
+);
+
+
+
+
 
 // Add services to the container.
 // Configuração para o Swagger/OpenAPI

@@ -31,3 +31,11 @@ C:\code\.NET\ProductsCrud\obj\Debug\net8.0\refint\ProductsCrud.dll
 C:\code\.NET\ProductsCrud\obj\Debug\net8.0\ProductsCrud.pdb
 C:\code\.NET\ProductsCrud\obj\Debug\net8.0\ProductsCrud.genruntimeconfig.cache
 C:\code\.NET\ProductsCrud\obj\Debug\net8.0\ref\ProductsCrud.dll
+C:\code\.NET\ProductsCrud\bin\Debug\net8.0\Humanizer.dll
+C:\code\.NET\ProductsCrud\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\code\.NET\ProductsCrud\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\code\.NET\ProductsCrud\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\code\.NET\ProductsCrud\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\code\.NET\ProductsCrud\bin\Debug\net8.0\MySqlConnector.dll
+C:\code\.NET\ProductsCrud\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\code\.NET\ProductsCrud\obj\Debug\net8.0\ProductsCrud.sourcelink.json
